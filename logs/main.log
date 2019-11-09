@@ -1,2 +1,3 @@
-2019-11-09.15:27:04 INFO  [main] com.niit.web.blog.util.LogTest.main:17  hello
-2019-11-09.15:27:57 INFO  [main] com.niit.web.blog.dao.UserDaoTest.batchInsert:22  批量新增用户成功
+2019-11-10.00:01:38 INFO  [main] com.niit.web.blog.dao.JianshuDaoTest.batchInsert:22  成功新增6个用户
+2019-11-10.00:03:09 INFO  [main] com.niit.web.blog.dao.JianshuDaoTest.batchInsert:22  成功新增6个用户
+2019-11-10.00:28:52 INFO  [main] com.niit.web.blog.dao.JianshuDaoTest.batchInsert:22  成功新增6个用户

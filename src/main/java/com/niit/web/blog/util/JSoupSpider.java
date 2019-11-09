@@ -1,5 +1,6 @@
 package com.niit.web.blog.util;
 
+import com.niit.web.blog.entity.Jianshu;
 import com.niit.web.blog.entity.User;
 
 import org.jsoup.Jsoup;
@@ -52,4 +53,41 @@ public class JSoupSpider {
         }
         return userList;
     }
+
+
+
+    public static List<Jianshu> getJianshus() {
+        Document document = null;
+        List<Jianshu> jianshuList = new ArrayList<>(100);
+
+            try {
+                document = Jsoup.connect("https://www.jianshu.com/" ).get();
+            } catch (IOException e) {
+                logger.error("连接失败");
+            }
+            Elements divs = document.getElementsByClass("have-img");
+            divs.forEach(div -> {
+                Element wrapImg = div.child(0);
+                Element contentDiv = div.child(1);
+
+                Jianshu jianshu = new Jianshu();
+                jianshu.setMobile(DataUtil.getMobile());
+                jianshu.setPassword(DataUtil.getPassword());
+                jianshu.setWriter(contentDiv.child(2).child(1).text());
+                jianshu.setTitle(contentDiv.child(0).text());
+                jianshu.setText(contentDiv.child(1).text());
+                jianshu.setAvatar("https:" + wrapImg.child(0).attr("src"));
+                jianshu.setMessage(DataUtil.getMessage());
+                jianshu.setAttention(DataUtil.getAttention());
+
+                jianshu.setCreate_time(LocalDateTime.now());
+                jianshuList.add(jianshu);
+            });
+
+        return jianshuList;
+    }
+
+
+
+
 }

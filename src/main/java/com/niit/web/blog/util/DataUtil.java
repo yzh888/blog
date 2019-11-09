@@ -42,7 +42,7 @@ public class DataUtil {
         return DigestUtils.md5Hex(password.toString());
     }
     public static String getGender(){
-        String [] genders=new String[]{"n","n"};
+        String [] genders=new String[]{"男","女"};
         Random random=new Random();
         int index=random.nextInt(2);
         return genders[index];
@@ -53,6 +53,36 @@ public class DataUtil {
         int bound=random.nextInt(8888);
         return now.minusDays(bound);
     }
+    public static String getTitle(){
+        StringBuilder title=new StringBuilder("139");
+        Random random1=new Random();
+        for (int i=0;i<6;i++){
+            int num1=random1.nextInt(10);
+            title.append(num1);
+        }
+        return DigestUtils.md5Hex(title.toString());
+    }
+    public static String getText(){
+        StringBuilder title=new StringBuilder("139");
+        Random random1=new Random();
+        for (int i=0;i<6;i++){
+            int num1=random1.nextInt(10);
+            title.append(num1);
+        }
+        return DigestUtils.md5Hex(title.toString());
+    }
+
+    public static Short getMessage(){
+        Random random=new Random();
+        short num=(short)random.nextInt(100);
+        return num;
+    }
+    public static Short getAttention(){
+        Random random=new Random();
+        short num1=(short)random.nextInt(100);
+        return num1;
+    }
+
 
  /*   public static void main(String[] args) {
         for (int i=0;i<10;i++){
