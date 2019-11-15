@@ -1,3 +1,1 @@
-2019-11-09.23:27:03 ERROR [main] com.niit.web.blog.util.JSoupSpider.getJianshus:66  连接失败
-2019-11-09.23:27:57 ERROR [main] com.niit.web.blog.util.JSoupSpider.getJianshus:66  连接失败
-2019-11-09.23:29:20 ERROR [main] com.niit.web.blog.util.JSoupSpider.getJianshus:66  连接失败
+2019-11-13.17:17:14 ERROR [main] com.niit.web.blog.dao.AddressDaoTest.batchInsert:26  批量新增地址异常

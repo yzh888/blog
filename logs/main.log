@@ -1,3 +1,1 @@
-2019-11-10.00:01:38 INFO  [main] com.niit.web.blog.dao.JianshuDaoTest.batchInsert:22  成功新增6个用户
-2019-11-10.00:03:09 INFO  [main] com.niit.web.blog.dao.JianshuDaoTest.batchInsert:22  成功新增6个用户
-2019-11-10.00:28:52 INFO  [main] com.niit.web.blog.dao.JianshuDaoTest.batchInsert:22  成功新增6个用户
+2019-11-14.08:58:22 INFO  [main] com.niit.web.blog.dao.UserDaoTest.batchInsert:22  成功新增72个用户

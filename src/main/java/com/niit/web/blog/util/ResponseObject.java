@@ -24,7 +24,7 @@ public class ResponseObject {
     /**
      * 构造方法私有，禁止外部类创建该类对象
      */
-    private ResponseObject() {
+    public ResponseObject() {
     }
     /**
      * 静态方法，对外提供该类的对象，请求成功无数据返回

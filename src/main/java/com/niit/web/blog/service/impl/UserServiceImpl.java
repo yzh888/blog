@@ -11,6 +11,7 @@ import org.slf4j.Logger;
 
 import java.sql.SQLException;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 
@@ -45,4 +46,18 @@ public class UserServiceImpl implements UserService {
         }
         return map;
     }
+
+    @Override
+    public List<User> listUser() {
+        List<User> userList = null;
+        try {
+            userList = userDao.selectAll();
+        } catch (SQLException e) {
+            logger.error("查询所有用户功能出现异常");
+        }
+        return userList;
+    }
+
+
+
 }

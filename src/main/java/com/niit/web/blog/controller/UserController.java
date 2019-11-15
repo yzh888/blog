@@ -9,6 +9,7 @@ import com.niit.web.blog.dao.UserDao;
 
 import com.niit.web.blog.domain.UserDto;
 
+import com.niit.web.blog.entity.User;
 import com.niit.web.blog.factory.ServiceFactory;
 
 import com.niit.web.blog.filter.CorsFilter;
@@ -39,6 +40,7 @@ import java.io.IOException;
 
 import java.io.PrintWriter;
 
+import java.util.List;
 import java.util.Map;
 
 
@@ -83,4 +85,27 @@ public class UserController extends HttpServlet {
         out.print(gson.toJson(ro));
         out.close();
     }
+
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        List<User> userList=userService.listUser();
+        Gson gson = new GsonBuilder().create();
+        ResponseObject ro = new ResponseObject();
+        ro.setCode(resp.getStatus());
+        if(resp.getStatus()==200){
+            ro.setMsg("响应成功");
+        }
+        else {
+            ro.setMsg("响应失败");
+        }
+
+        ro.setData(userList);
+
+        PrintWriter out = resp.getWriter();
+        out.print(gson.toJson(ro));
+        out.close();
+    }
+
+
+
 }

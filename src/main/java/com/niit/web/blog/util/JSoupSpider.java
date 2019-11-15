@@ -1,5 +1,6 @@
 package com.niit.web.blog.util;
 
+import com.niit.web.blog.entity.Address;
 import com.niit.web.blog.entity.Jianshu;
 import com.niit.web.blog.entity.User;
 
@@ -11,6 +12,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
+import java.sql.SQLOutput;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
@@ -87,7 +89,33 @@ public class JSoupSpider {
         return jianshuList;
     }
 
+    public static List<Address> getAddresss() {
+        Document document = null;
+        List<Address> addressList = new ArrayList<>(100);
 
+        try {
+            document = Jsoup.connect("http://www.ip33.com/area_code.html" ).get();
+        } catch (IOException e) {
+            logger.error("连接失败");
+        }
+        Elements divs = document.getElementsByClass("ip");
+        divs.forEach(div -> {
 
+            Elements elements = div.child(1).child(0).child(1).children();
+                elements.forEach(element -> {
+                Address address = new Address();
+                StringBuilder province = new StringBuilder("");
+                String country = div.child(1).child(0).child(0).text();
+                int c = country.indexOf(" ");
+                int p = div.child(0).text().indexOf(" ");
+                int e = element.text().indexOf(" ");
+                province.append(div.child(0).text().substring(0, p)).append(country.substring(0,c)).append(element.text().substring(0, e));
+                address.setAddress(province.toString());
+                addressList.add(address);
+            });
 
+        });
+
+        return addressList;
+    }
 }
