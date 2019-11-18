@@ -59,6 +59,14 @@ public class UserServiceImpl implements UserService {
         return userList;
     }
 
-
+    @Override
+    public User findUserById(long id) {
+        User user = null;
+        try {
+            user = userDao.getUserById(id);
+        } catch (SQLException e) {
+            logger.error("通过id查询用户出现异常");        }
+        return user;
+    }
 
 }

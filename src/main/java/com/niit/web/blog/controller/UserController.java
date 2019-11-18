@@ -55,7 +55,7 @@ import java.util.Map;
  * @Version 1.0
  **/
 
-@WebServlet(urlPatterns = "/sign-in")
+@WebServlet(urlPatterns = {"/sign-in", "/users", "/users/*"})
 public class UserController extends HttpServlet {
     private static Logger logger = LoggerFactory.getLogger(UserController.class);
     private UserService userService = ServiceFactory.getUserServiceInstance();
@@ -91,24 +91,39 @@ public class UserController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String requestPath = req.getRequestURI().trim();
-        List<User> userList=userService.listUser();
+        List<User> userList = null;
+        User user = null;
+
+        if(requestPath.equals("/users")){
+            /*查询所有用户*/
+            userList = userService.listUser();
+            System.out.println(requestPath);
+        }else{
+            int position = requestPath.lastIndexOf("/");
+            String id = requestPath.substring(position + 1);
+            /*进入用户详情页*/
+            user = userService.findUserById(Integer.parseInt(id));
+        }
         Gson gson = new GsonBuilder().create();
         ResponseObject ro = new ResponseObject();
         ro.setCode(resp.getStatus());
-        if(resp.getStatus()==200){
+        if(resp.getStatus() == 200){
             ro.setMsg("响应成功");
-        }
-        else {
+        }else{
             ro.setMsg("响应失败");
         }
 
-        ro.setData(userList);
+        if(userList!=null) {
+            ro.setData(userList);
+
+        }else {
+            ro.setData(user);
+        }
 
         PrintWriter out = resp.getWriter();
         out.print(gson.toJson(ro));
         out.close();
     }
-
 
 
 }

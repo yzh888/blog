@@ -186,7 +186,34 @@ public class UserDaoImpl implements UserDao {
 
         return userList;
     }
-
+    /*通过id查询用户*/
+    @Override
+    public User getUserById(long id) throws SQLException {
+        Connection connection = DbUtil.getConnection();
+        String sql = "SELECT * FROM t_user WHERE id = ?";
+        PreparedStatement pstmt = connection.prepareStatement(sql);
+        pstmt.setLong(1,id);
+        ResultSet rs = pstmt.executeQuery();
+        User user = null;
+        while (rs.next()){
+            user = new User();
+            user.setId(rs.getLong("id"));
+            user.setMobile(rs.getString("mobile"));
+            user.setPassword(rs.getString("password"));
+            user.setNickname(rs.getString("nickname"));
+            user.setAvatar(rs.getString("avatar"));
+            user.setGender(rs.getString("gender"));
+            user.setBirthday(rs.getDate("birthday").toLocalDate());
+            user.setIntroduction(rs.getString("introduction"));
+            user.setAddress(rs.getString("address"));
+            user.setFollows(rs.getShort("follows"));
+            user.setFans(rs.getShort("fans"));
+            user.setArticles(rs.getShort("articles"));
+            user.setCreateTime(rs.getTimestamp("create_time").toLocalDateTime());
+            user.setStatus(rs.getShort("status"));
+        }
+        return user;
+    }
 
 
     }

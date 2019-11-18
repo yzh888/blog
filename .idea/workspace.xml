@@ -7,36 +7,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b35ae59-55b0-45a8-8d35-ff2c7fce9088" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/niit/web/blog/dao/ArticleDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/niit/web/blog/domain/Vo/ArticleVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/niit/web/blog/entity/Article.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/niit/web/blog/service/ArticleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/niit/web/blog/service/impl/ArticleServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/com/niit/web/blog/dao/ArticleDaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/com/niit/web/blog/dao/GraphicHelperTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/error.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/main.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/main.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/web/blog/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/web/blog/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/web/blog/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/web/blog/dao/UserDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/web/blog/dao/impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/web/blog/dao/impl/UserDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/web/blog/factory/DaoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/web/blog/factory/DaoFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/web/blog/factory/ServiceFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/web/blog/factory/ServiceFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/web/blog/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/web/blog/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/web/blog/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/web/blog/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/web/blog/util/DataUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/web/blog/util/DataUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/web/blog/util/JSoupSpider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/web/blog/util/JSoupSpider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/niit/web/blog/factory/DaoFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/niit/web/blog/factory/DaoFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/niit/web/blog/factory/ServiceFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/niit/web/blog/factory/ServiceFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/niit/web/blog/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/niit/web/blog/controller/UserController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/niit/web/blog/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/niit/web/blog/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/niit/web/blog/util/DataUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/niit/web/blog/util/DataUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/niit/web/blog/util/JSoupSpider.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/niit/web/blog/util/JSoupSpider.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/niit/web/blog/factory/DaoFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/niit/web/blog/factory/DaoFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/niit/web/blog/factory/ServiceFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/niit/web/blog/factory/ServiceFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/niit/web/blog/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/niit/web/blog/controller/UserController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/niit/web/blog/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/niit/web/blog/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/niit/web/blog/util/DataUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/niit/web/blog/util/DataUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/niit/web/blog/util/JSoupSpider.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/niit/web/blog/util/JSoupSpider.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,8 +30,8 @@
         <option value="Interface" />
         <option value="HTML File" />
         <option value="Jsp File" />
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -298,8 +278,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ArticleDaoTest" />
         <item itemvalue="JUnit.ArticleDaoTest.batchInsert" />
+        <item itemvalue="JUnit.ArticleDaoTest" />
         <item itemvalue="JUnit.ArticleDaoTest.selectHotArticles" />
         <item itemvalue="JUnit.GraphicHelperTest" />
         <item itemvalue="JUnit.UserServiceTest" />
@@ -339,7 +319,7 @@
       <workItem from="1573886921487" duration="1367000" />
       <workItem from="1573969736510" duration="11188000" />
       <workItem from="1574043403074" duration="3126000" />
-      <workItem from="1574046833540" duration="7105000" />
+      <workItem from="1574046833540" duration="12640000" />
     </task>
     <task id="LOCAL-00001" summary="blog commit">
       <created>1573291481942</created>
@@ -362,7 +342,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573784073340</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="两表联查">
+      <created>1574056268031</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1574056268031</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -385,6 +372,7 @@
     <MESSAGE value="blog commit" />
     <MESSAGE value="简书内容爬虫" />
     <MESSAGE value="查询所有用户信息" />
-    <option name="LAST_COMMIT_MESSAGE" value="查询所有用户信息" />
+    <MESSAGE value="两表联查" />
+    <option name="LAST_COMMIT_MESSAGE" value="两表联查" />
   </component>
 </project>
