@@ -55,7 +55,7 @@ import java.util.Map;
  * @Version 1.0
  **/
 
-@WebServlet(urlPatterns = {"/sign-in", "/users", "/users/*"})
+@WebServlet(urlPatterns = {"/sign-in", "/users/*"})
 public class UserController extends HttpServlet {
     private static Logger logger = LoggerFactory.getLogger(UserController.class);
     private UserService userService = ServiceFactory.getUserServiceInstance();
@@ -70,18 +70,23 @@ public class UserController extends HttpServlet {
         logger.info("登录用户信息：" + stringBuilder.toString());
         Gson gson = new GsonBuilder().create();
         UserDto userDto = gson.fromJson(stringBuilder.toString(), UserDto.class);
-        Map<String, Object> map = userService.signIn(userDto);
-        String msg = (String) map.get("msg");
+        String stl=this.getServletContext().getAttribute("code").toString();
+        Map<String, Object> map;
         ResponseObject ro;
-        if (msg.equals(Message.SIGN_IN_SUCCESS)) {
+        String msg=null;
+        if (userDto.getCode().equals(stl)){
+       map = userService.signIn(userDto);
+        msg = (String) map.get("msg");
             /*case "登录成功":*/
             ro = ResponseObject.success(200, msg, map.get("data"));
+        }else {
+
+
                /* break;
             case "密码错误":
             case "手机号不存在":
             default:*/
-        }else{
-                ro = ResponseObject.success(200, msg);
+                ro = ResponseObject.success(200, "验证码错误");
         }
         PrintWriter out = resp.getWriter();
         out.print(gson.toJson(ro));
@@ -97,7 +102,6 @@ public class UserController extends HttpServlet {
         if(requestPath.equals("/users")){
             /*查询所有用户*/
             userList = userService.listUser();
-            System.out.println(requestPath);
         }else{
             int position = requestPath.lastIndexOf("/");
             String id = requestPath.substring(position + 1);

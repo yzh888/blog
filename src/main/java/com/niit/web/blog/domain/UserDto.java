@@ -16,16 +16,18 @@ import java.sql.PreparedStatement;
 public class UserDto {
     private String mobile;
     private String password;
+    private String code;
 
 
-    public UserDto(String mobile, String password) {
+   /* public UserDto(String mobile, String password) {
         this.mobile = mobile;
         this.password = password;
+
     }
 
     public UserDto() {
     }
-
+*/
 
 
 }

@@ -1,6 +1,7 @@
 package com.niit.web.blog.dao;
 
 import com.niit.web.blog.domain.Vo.ArticleVo;
+import com.niit.web.blog.entity.Article;
 import com.niit.web.blog.factory.DaoFactory;
 import com.niit.web.blog.factory.ServiceFactory;
 import com.niit.web.blog.service.ArticleService;
@@ -29,9 +30,12 @@ public class ArticleDaoTest {
     }
 
     @Test
-    public void selectAuthorArticle() {
-        List<ArticleVo> articleVoList = service.listAuthorArticle(69);
+    public void selectAuthorArticle() throws SQLException{
+        List<ArticleVo> articleVoList = service.listAuthorArticle(93);
         System.out.println(articleVoList.size());
 
     }
+
+
+
 }

@@ -29,4 +29,6 @@ public interface ArticleDao {
      * @throws SQLException
      */
     List<ArticleVo> selectAuthorArticle(long id) throws SQLException;
+
+
 }
