@@ -16,6 +16,7 @@ import com.niit.web.blog.filter.CorsFilter;
 
 import com.niit.web.blog.service.UserService;
 
+import com.niit.web.blog.util.Message;
 import com.niit.web.blog.util.ResponseObject;
 
 import org.slf4j.Logger;
@@ -72,13 +73,14 @@ public class UserController extends HttpServlet {
         Map<String, Object> map = userService.signIn(userDto);
         String msg = (String) map.get("msg");
         ResponseObject ro;
-        switch (msg) {
-            case "登录成功":
-                ro = ResponseObject.success(200, msg, map.get("data"));
-                break;
+        if (msg.equals(Message.SIGN_IN_SUCCESS)) {
+            /*case "登录成功":*/
+            ro = ResponseObject.success(200, msg, map.get("data"));
+               /* break;
             case "密码错误":
             case "手机号不存在":
-            default:
+            default:*/
+        }else{
                 ro = ResponseObject.success(200, msg);
         }
         PrintWriter out = resp.getWriter();
@@ -88,6 +90,7 @@ public class UserController extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        String requestPath = req.getRequestURI().trim();
         List<User> userList=userService.listUser();
         Gson gson = new GsonBuilder().create();
         ResponseObject ro = new ResponseObject();

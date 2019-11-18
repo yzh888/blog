@@ -71,6 +71,17 @@ public class DataUtil {
         }
         return DigestUtils.md5Hex(title.toString());
     }
+    public static Long getUserId(){
+        Random random = new Random();
+        long bound = random.nextInt(61);
+        return bound;
+    }
+    public static LocalDateTime getCreateTime(){
+        LocalDateTime now = LocalDateTime.now();
+        Random random = new Random();
+        int bound = random.nextInt(999);
+        return now.minusHours(bound);
+    }
 
     public static Short getMessage(){
         Random random=new Random();
@@ -82,7 +93,45 @@ public class DataUtil {
         short num1=(short)random.nextInt(100);
         return num1;
     }
+    /**
+     * 随机获取作者id
+     * @return
+     */
+    public static long getAuthorId (){
+        Random random = new Random();
+        long id = random.nextInt(73);
+        return id;
+    }
 
+    /**
+     * 随机生成转发人数
+     * @return
+     */
+    public static int getForwordAccount (){
+        Random random = new Random();
+        int account = random.nextInt(200);
+        return account;
+    }
+
+    /**
+     * 随机生成评论人数
+     * @return
+     */
+    public static int getCommentAccount (){
+        Random random = new Random();
+        int account = random.nextInt(500);
+        return account;
+    }
+
+    /**
+     * 随机生成关注量
+     * @return
+     */
+    public static int getLikeAccount (){
+        Random random = new Random();
+        int account = random.nextInt(500);
+        return account;
+    }
 
  /*   public static void main(String[] args) {
         for (int i=0;i<10;i++){

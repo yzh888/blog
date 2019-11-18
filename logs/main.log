@@ -1,1 +1,3 @@
-2019-11-14.08:58:22 INFO  [main] com.niit.web.blog.dao.UserDaoTest.batchInsert:22  成功新增72个用户
+2019-11-18.12:02:30 ERROR [main] com.niit.web.blog.service.impl.ArticleServiceImpl.listAuthorArticle:35  查询登录用户文章信息异常
+2019-11-18.12:03:48 ERROR [main] com.niit.web.blog.service.impl.ArticleServiceImpl.listAuthorArticle:35  查询登录用户文章信息异常
+2019-11-18.12:23:56 INFO  [main] com.niit.web.blog.dao.ArticleDaoTest.batchInsert:24  获取文章数据成功

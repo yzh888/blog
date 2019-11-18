@@ -1,1 +1,2 @@
-2019-11-13.17:17:14 ERROR [main] com.niit.web.blog.dao.AddressDaoTest.batchInsert:26  批量新增地址异常
+2019-11-18.12:02:30 ERROR [main] com.niit.web.blog.service.impl.ArticleServiceImpl.listAuthorArticle:35  查询登录用户文章信息异常
+2019-11-18.12:03:48 ERROR [main] com.niit.web.blog.service.impl.ArticleServiceImpl.listAuthorArticle:35  查询登录用户文章信息异常

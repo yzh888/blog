@@ -39,4 +39,5 @@ public interface UserDao {
 
     User findUserByMobile(String mobile) throws SQLException;
     List<User> selectAll()throws SQLException;
+    User getUserById (long id) throws SQLException;
 }
