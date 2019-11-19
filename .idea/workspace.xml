@@ -7,10 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b35ae59-55b0-45a8-8d35-ff2c7fce9088" name="Default Changelist" comment="两表联查+第一版简陋博客基础框架+验证码1.0">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/niit/web/blog/controller/CodeController1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/niit/web/blog/test/CreateFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/niit/web/blog/test/FileCopy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/niit/web/blog/test/random.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/com/niit/web/blog/dao/StudentDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/niit/web/blog/dao/StudentDaoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/niit/web/blog/dao/StudentDaoTest.class" beforeDir="false" />
@@ -29,9 +26,9 @@
       <list>
         <option value="Interface" />
         <option value="HTML File" />
-        <option value="Jsp File" />
         <option value="JUnit4 Test Class" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -118,7 +115,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.random">
+  <component name="RunManager" selected="Tomcat Server.blog">
     <configuration name="Code" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.niit.web.blog.test.Code" />
       <module name="blog" />
@@ -309,7 +306,7 @@
       <workItem from="1574043403074" duration="3126000" />
       <workItem from="1574046833540" duration="28078000" />
       <workItem from="1574139811810" duration="13419000" />
-      <workItem from="1574158615541" duration="6450000" />
+      <workItem from="1574158615541" duration="7233000" />
     </task>
     <task id="LOCAL-00001" summary="blog commit">
       <created>1573291481942</created>
@@ -353,7 +350,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574087368035</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="复制并新建文件夹，文件命名为当前时间">
+      <created>1574173467965</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1574173467965</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -379,7 +383,8 @@
     <MESSAGE value="两表联查" />
     <MESSAGE value="两表联查+第一版简陋博客基础框架" />
     <MESSAGE value="两表联查+第一版简陋博客基础框架+验证码1.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="两表联查+第一版简陋博客基础框架+验证码1.0" />
+    <MESSAGE value="复制并新建文件夹，文件命名为当前时间" />
+    <option name="LAST_COMMIT_MESSAGE" value="复制并新建文件夹，文件命名为当前时间" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
