@@ -12,7 +12,7 @@ import java.util.Random;
  * @Date 2019/11/19:14:04
  * @Version 1.0
  **/
-public class random {
+public class StringUtil {
     public static String getcode(){
         Random random = new Random();
         StringBuilder stringBuilder = new StringBuilder("");
