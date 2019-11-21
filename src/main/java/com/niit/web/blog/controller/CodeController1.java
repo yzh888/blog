@@ -67,7 +67,7 @@ public class CodeController1 extends HttpServlet {
        Color color=new Color(130,182,45);
        //创建图片缓存区，传参为宽高和图片类型
        BufferedImage bi=new BufferedImage(width,height,BufferedImage.TYPE_INT_RGB);
-       //获取画笔并绘制
+       //获取画笔并绘制42444
        Graphics g=bi.getGraphics();
        g.setFont(new Font(Font.SANS_SERIF,Font.BOLD,16));
        g.setColor(color);
