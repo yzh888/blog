@@ -6,17 +6,11 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b35ae59-55b0-45a8-8d35-ff2c7fce9088" name="Default Changelist" comment="两表联查+第一版简陋博客基础框架+验证码1.0">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/niit/web/blog/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/niit/web/blog/controller/UploadController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/niit/web/blog/listener/MySessionContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/niit/web/blog/listener/SessionListener.java" afterDir="false" />
+    <list default="true" id="3b35ae59-55b0-45a8-8d35-ff2c7fce9088" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/web/blog/controller/CodeController1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/web/blog/controller/CodeController1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/web/blog/test/random.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/web/blog/test/StringUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/web/blog/controller/UploadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/web/blog/controller/UploadController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/com/niit/web/blog/dao/StudentDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/niit/web/blog/dao/StudentDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/niit/web/blog/dao/StudentDaoTest.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -313,7 +307,8 @@
       <workItem from="1574046833540" duration="28078000" />
       <workItem from="1574139811810" duration="13419000" />
       <workItem from="1574158615541" duration="10486000" />
-      <workItem from="1574207482683" duration="14476000" />
+      <workItem from="1574207482683" duration="15131000" />
+      <workItem from="1574335515530" duration="10577000" />
     </task>
     <task id="LOCAL-00001" summary="blog commit">
       <created>1573291481942</created>
@@ -371,7 +366,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574174135530</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="上传下载文件并存入指定目录，文件名uuid指定">
+      <created>1574255743797</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1574255743797</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -399,7 +401,8 @@
     <MESSAGE value="两表联查+第一版简陋博客基础框架+验证码1.0" />
     <MESSAGE value="复制并新建文件夹，文件命名为当前时间" />
     <MESSAGE value="远程资源下载" />
-    <option name="LAST_COMMIT_MESSAGE" value="远程资源下载" />
+    <MESSAGE value="上传下载文件并存入指定目录，文件名uuid指定" />
+    <option name="LAST_COMMIT_MESSAGE" value="上传下载文件并存入指定目录，文件名uuid指定" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
