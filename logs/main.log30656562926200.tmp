@@ -1,0 +1,6 @@
+2019-11-15.15:10:17 ERROR [main] com.niit.web.blog.util.JSoupSpider.lambda$getArticles$4:139  连接失败
+2019-11-15.15:16:54 ERROR [main] com.niit.web.blog.util.JSoupSpider.getArticles:130  连接失败
+2019-11-15.15:29:29 ERROR [main] com.niit.web.blog.util.JSoupSpider.lambda$getArticles$4:139  连接失败
+2019-11-15.15:42:19 ERROR [main] com.niit.web.blog.util.JSoupSpider.getArticles:130  连接失败
+2019-11-15.15:43:03 ERROR [main] com.niit.web.blog.util.JSoupSpider.getArticles:130  连接失败
+2019-11-15.15:43:03 ERROR [main] com.niit.web.blog.util.JSoupSpider.lambda$getArticles$4:139  连接失败

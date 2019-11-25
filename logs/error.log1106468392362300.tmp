@@ -1,0 +1,6 @@
+2019-11-13.11:01:50 ERROR [main] com.niit.web.blog.dao.AddressDaoTest.batchInsert:27  批量新增地址异常
+2019-11-13.11:03:26 ERROR [main] com.niit.web.blog.dao.AddressDaoTest.batchInsert:27  批量新增地址异常
+2019-11-13.11:17:24 ERROR [main] com.niit.web.blog.dao.AddressDaoTest.batchInsert:27  批量新增地址异常
+2019-11-13.11:18:57 ERROR [main] com.niit.web.blog.dao.AddressDaoTest.batchInsert:27  批量新增地址异常
+2019-11-13.11:24:05 ERROR [main] com.niit.web.blog.dao.AddressDaoTest.batchInsert:27  批量新增地址异常
+2019-11-13.11:25:35 ERROR [main] com.niit.web.blog.dao.AddressDaoTest.batchInsert:27  批量新增地址异常

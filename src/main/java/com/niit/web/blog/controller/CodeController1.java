@@ -24,6 +24,7 @@ import java.io.IOException;
  **/
 @WebServlet(urlPatterns = {"/api/code"})
 public class CodeController1 extends HttpServlet {
+    private static final long serialVersionUID = 3398560501558431737L;
    /* @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         //1.调用字符串生成方法，生成随机字符串
@@ -77,8 +78,15 @@ public class CodeController1 extends HttpServlet {
        //向客户端输出图片
       /* g.drawString(code,width/4,height/2);*/
        //取得res87ponse的字节流
+
        resp.setContentType("image/jpg");
        ServletOutputStream out=resp.getOutputStream();
        ImageIO.write(img,"jpg",out);
        out.close();
-}}
+}
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+//        String inputCode = req.getParameter("")
+    }
+
+}

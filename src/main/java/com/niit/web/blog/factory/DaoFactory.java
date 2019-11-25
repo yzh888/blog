@@ -25,6 +25,7 @@ public class DaoFactory {
     public static ArticleDao getArticleInstance() {
         return new ArticleDaoImpl();
     }
+    public static TopicDao getTopicInstance() { return new TopicDaoImpl(); }
 
 
 
