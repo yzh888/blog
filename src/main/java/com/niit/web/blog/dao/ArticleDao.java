@@ -1,7 +1,7 @@
 package com.niit.web.blog.dao;
+
 import com.niit.web.blog.domain.Vo.ArticleVo;
 import com.niit.web.blog.entity.Article;
-import com.niit.web.blog.entity.User;
 
 import java.sql.SQLException;
 import java.util.List;
@@ -28,7 +28,21 @@ public interface ArticleDao {
      * @return
      * @throws SQLException
      */
-    List<ArticleVo> selectAuthorArticle(long id) throws SQLException;
 
 
+    /**
+     * 查询与关键字有关的文章
+     * @param title
+     * @return
+     * @throws SQLException
+     */
+    List<Article> getArticleByTitle(String title) throws SQLException;
+
+    /**
+     * 查询热门文章
+     * @return
+     * @throws SQLException
+     */
+    List<Article> getHotArticle() throws SQLException;
+   ArticleVo selectAuthorArticle(long id) throws SQLException;
 }

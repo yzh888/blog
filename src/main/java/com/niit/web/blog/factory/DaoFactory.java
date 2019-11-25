@@ -5,7 +5,7 @@ import com.niit.web.blog.dao.JianshuDao;
 import com.niit.web.blog.dao.impl.*;
 import com.niit.web.blog.dao.impl.JianshuDaoImpl;
 import com.niit.web.blog.dao.ArticleDao;
-import com.niit.web.blog.dao.impl.ArticleImpl;
+import com.niit.web.blog.dao.impl.ArticleDaoImpl;
 /**
  * @author zh_yan
  * @ClassName DaoFactory
@@ -23,7 +23,7 @@ public class DaoFactory {
     public static JianshuDao getJianshuDaoInstance(){ return new JianshuDaoImpl();}
     public static AddressDao getAddressDaoInstance(){ return new AddressDaoImpl();}
     public static ArticleDao getArticleInstance() {
-        return new ArticleImpl();
+        return new ArticleDaoImpl();
     }
 
 

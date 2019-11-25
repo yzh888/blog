@@ -27,13 +27,24 @@ public class ArticleServiceImpl implements ArticleService {
     }
 
     @Override
-    public List<ArticleVo> listAuthorArticle(long id) {
-        List<ArticleVo> articleVoList = null;
+    public ArticleVo AuthorArticle(long id) {
+        ArticleVo articleVo = null;
         try {
-            articleVoList = articleDao.selectAuthorArticle(id);
+            articleVo = articleDao.selectAuthorArticle(id);
         } catch (SQLException e) {
             logger.error("查询登录用户文章信息异常");
         }
-        return articleVoList;
+        return articleVo;
+    }
+
+    @Override
+    public List<Article> listArticleByTitle(String titleName) {
+        List<Article> articleList = null;
+        try {
+            articleList = articleDao.getArticleByTitle(titleName);
+        } catch (SQLException e) {
+            logger.error("根据标题查询文章异常");
+        }
+        return articleList;
     }
 }

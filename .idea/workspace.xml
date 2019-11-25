@@ -6,12 +6,34 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b35ae59-55b0-45a8-8d35-ff2c7fce9088" name="Default Changelist" comment="多文件同时上传，刷新有bug">
+    <list default="true" id="3b35ae59-55b0-45a8-8d35-ff2c7fce9088" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/niit/web/blog/domain/SimpleUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/niit/web/blog/util/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/niit/web/blog/util/ResultCode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/web/blog/controller/CodeController1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/web/blog/controller/CodeController1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/web/blog/controller/UploadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/web/blog/controller/UploadController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/web/blog/util/DataUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/web/blog/util/DataUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/blog/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/web/blog/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/web/blog/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/web/blog/dao/ArticleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/web/blog/dao/ArticleDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/web/blog/domain/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/web/blog/domain/Dto/UserDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/web/blog/domain/Vo/ArticleVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/web/blog/domain/Vo/ArticleVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/web/blog/factory/DaoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/web/blog/factory/DaoFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/web/blog/service/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/web/blog/service/ArticleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/web/blog/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/web/blog/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/web/blog/service/impl/ArticleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/web/blog/service/impl/ArticleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/web/blog/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/web/blog/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/com/niit/web/blog/dao/ArticleDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/niit/web/blog/dao/ArticleDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/com/niit/web/blog/service/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/niit/web/blog/service/UserServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/niit/web/blog/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/niit/web/blog/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/niit/web/blog/domain/UserDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/niit/web/blog/factory/DaoFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/niit/web/blog/factory/DaoFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/niit/web/blog/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/niit/web/blog/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/niit/web/blog/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/niit/web/blog/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/niit/web/blog/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/niit/web/blog/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/niit/web/blog/domain/UserDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/niit/web/blog/factory/DaoFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/niit/web/blog/factory/DaoFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/niit/web/blog/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/niit/web/blog/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/niit/web/blog/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/niit/web/blog/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/niit/web/blog/service/UserServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/niit/web/blog/service/UserServiceTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -310,7 +332,11 @@
       <workItem from="1574158615541" duration="10486000" />
       <workItem from="1574207482683" duration="15131000" />
       <workItem from="1574335515530" duration="13762000" />
-      <workItem from="1574350304598" duration="245000" />
+      <workItem from="1574350304598" duration="498000" />
+      <workItem from="1574404608272" duration="5171000" />
+      <workItem from="1574497306010" duration="1527000" />
+      <workItem from="1574567875853" duration="6745000" />
+      <workItem from="1574647388665" duration="5809000" />
     </task>
     <task id="LOCAL-00001" summary="blog commit">
       <created>1573291481942</created>
@@ -382,7 +408,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574346774091</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="多文件同时上传更新修正">
+      <created>1574350718235</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1574350718235</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -412,7 +445,8 @@
     <MESSAGE value="远程资源下载" />
     <MESSAGE value="上传下载文件并存入指定目录，文件名uuid指定" />
     <MESSAGE value="多文件同时上传，刷新有bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="多文件同时上传，刷新有bug" />
+    <MESSAGE value="多文件同时上传更新修正" />
+    <option name="LAST_COMMIT_MESSAGE" value="多文件同时上传更新修正" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

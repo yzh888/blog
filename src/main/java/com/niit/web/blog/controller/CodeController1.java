@@ -1,5 +1,6 @@
 package com.niit.web.blog.controller;
 
+import com.niit.web.blog.test.ImageUtil;
 import com.niit.web.blog.test.StringUtil;
 
 import javax.imageio.ImageIO;
@@ -10,10 +11,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
-import java.util.Random;
 
 /**
  * 请求接口
@@ -61,23 +60,25 @@ public class CodeController1 extends HttpServlet {
        //存入session
        HttpSession session=req.getSession();
        session.setAttribute("code",code);
-       int width=130;
-       int height=35;
-       Random random=new Random();
-       Color color=new Color(130,182,45);
+       resp.setHeader("Access-Token",session.getId());
+       /*int width=130;
+       int height=35;*/
+       BufferedImage img = ImageUtil.createImage(200, 100, code);
+      /* Random random=new Random();
+       Color color=new Color(130,182,45);*/
        //创建图片缓存区，传参为宽高和图片类型
-       BufferedImage bi=new BufferedImage(width,height,BufferedImage.TYPE_INT_RGB);
+      /* BufferedImage bi=new BufferedImage(width,height,BufferedImage.TYPE_INT_RGB);*/
        //获取画笔并绘制42444
-       Graphics g=bi.getGraphics();
+     /*  Graphics g=bi.getGraphics();
        g.setFont(new Font(Font.SANS_SERIF,Font.BOLD,16));
        g.setColor(color);
        g.fillRect(0,0,width,height);
-       g.setColor(Color.DARK_GRAY);
+       g.setColor(Color.DARK_GRAY);*/
        //向客户端输出图片
-       g.drawString(code,width/4,height/2);
-       //取得response的字节流
+      /* g.drawString(code,width/4,height/2);*/
+       //取得res87ponse的字节流
        resp.setContentType("image/jpg");
        ServletOutputStream out=resp.getOutputStream();
-       ImageIO.write(bi,"jpg",out);
+       ImageIO.write(img,"jpg",out);
        out.close();
 }}

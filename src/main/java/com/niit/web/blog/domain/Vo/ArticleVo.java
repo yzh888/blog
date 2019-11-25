@@ -24,4 +24,6 @@ public class ArticleVo {
     private Integer likeAccount;
     private Integer forwardAccount;
     private LocalDateTime createTime;
+
+
 }

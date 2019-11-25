@@ -1,11 +1,10 @@
 package com.niit.web.blog.service;
 
-import com.niit.web.blog.domain.UserDto;
+import com.niit.web.blog.domain.Dto.UserDto;
 
 import com.niit.web.blog.entity.User;
 
 import java.util.List;
-import java.util.ListResourceBundle;
 import java.util.Map;
 
 /**

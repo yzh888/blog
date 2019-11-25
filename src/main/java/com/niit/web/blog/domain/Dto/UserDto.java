@@ -1,9 +1,6 @@
-package com.niit.web.blog.domain;
+package com.niit.web.blog.domain.Dto;
 
 import lombok.Data;
-
-import java.security.PrivateKey;
-import java.sql.PreparedStatement;
 
 /**
  * @author zh_yan
